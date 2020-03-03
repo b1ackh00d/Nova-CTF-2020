@@ -6,6 +6,9 @@
 #### Hint
     Split the string at 92 and 264 :)
 
+    By visiting [jwt.io](https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.eyJmbGFnMSI6Ik5vdmF7IiwiZmxhZzIiOiJwNHlsb2FkX2g0cyIsImZsYWczIjoiYjMzbl9icjBrM24zZH0ifQ.He9EajvQEa3Afzr88thpr3U7eKi-rCp5w3-zI4rjKkA) we can easily see the decoded value(or payload) of this token.
+
+
 #### Solution
 
 ```
@@ -22,13 +25,14 @@ l = fun()
 
 print(l[0].decode("hex") + "." + l[1].decode("hex") + "." + l[2].decode("hex"))
 
-#Output:
+### Output:
 eyJhbGciOiJIUzI1NiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.eyJmbGFnMSI6Ik5vdmF7IiwiZmxhZzIiOiJwNHlsb2FkX2g0cyIsImZsYWczIjoiYjMzbl9icjBrM24zZH0ifQ.He9EajvQEa3Afzr88thpr3U7eKi-rCp5w3-zI4rjKkA
+
 ```
 
 #### Flag
-    The output is nothing but DOTs separated base64URL encoded values generally known as JWT token.
+    * The output is nothing but DOTs separated base64URL encoded values generally known as JWT token.
 
-    By visiting <https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.eyJmbGFnMSI6Ik5vdmF7IiwiZmxhZzIiOiJwNHlsb2FkX2g0cyIsImZsYWczIjoiYjMzbl9icjBrM24zZH0ifQ.He9EajvQEa3Afzr88thpr3U7eKi-rCp5w3-zI4rjKkA> we can easily see the decoded value(or payload) of this token.
+    *By visiting [jwt.io](https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInVzZXJuYW1lIjoiYWRtaW4ifQ.eyJmbGFnMSI6Ik5vdmF7IiwiZmxhZzIiOiJwNHlsb2FkX2g0cyIsImZsYWczIjoiYjMzbl9icjBrM24zZH0ifQ.He9EajvQEa3Afzr88thpr3U7eKi-rCp5w3-zI4rjKkA) we can easily see the decoded value(or payload) of this token.
 
     Flag : Nova{p4yload_h4sb33n_br0k3n3d}
