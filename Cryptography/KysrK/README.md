@@ -44,6 +44,14 @@ KysrKzw8PDwtXT4+KysrKysrKysrKysrKysrKysrKy4rLisrKy4K*
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>-----------------.----.
 ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>+++++++++++++++++++.+.+++.*
 
-- After brainfuck interpretation
+- We got 16 lines of brainfuck code and the decoded numbers are
 
 *Output = 78, 111, 118, 97, 123, 65, 36, 67, 73, 73, 95, 99, 48, 100, 51, 125]*
+
+```
+numbers = [78, 111, 118, 97, 123, 65, 36, 67, 73, 73, 95, 99, 48, 100, 51, 125]
+flag = []
+for i in numbers:
+  flag.append(chr(i))
+print(''.join(flag))
+```
