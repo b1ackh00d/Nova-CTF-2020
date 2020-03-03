@@ -55,3 +55,4 @@ for i in numbers:
   flag.append(chr(i))
 print(''.join(flag))
 ```
+- Flag : Nova{A$CII_c0d3}
